@@ -26,7 +26,11 @@ const Countdown = () => {
           <h2>
             Comming <span className="son">Soon</span>
           </h2>
+          <h3 className={`timeContent ${target > 0 && "visible"}`}>
+            Choose Your Date Here
+          </h3>
           <input
+            className="input"
             type="date"
             onChange={(event) => setTarget(new Date(event.target.value))}
           />
