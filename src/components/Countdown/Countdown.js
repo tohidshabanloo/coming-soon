@@ -18,26 +18,38 @@ const Countdown = () => {
   const hours = Math.floor((diffrence / (1000 * 60 * 60)) % 24);
   const minutes = Math.floor((diffrence / (1000 * 60)) % 60);
   const seconds = Math.floor((diffrence / 1000) % 60);
-  console.log();
+
   return (
     <div>
-      <h1>Not Soon</h1>
-
-      <input
-        type="date"
-        onChange={(event) => setTarget(new Date(event.target.value))}
-      ></input>
-      {diffrence > 0 ? (
+      <div className="contet">
         <div>
-          <div className="days">Days {days}</div>
-
-          <div className="days">Hours {hours}</div>
-
-          <div className="days">Minutes {minutes}</div>
-
-          <div className="days">Seconds {seconds}</div>
+          <h2>
+            Comming <span className="son">Soon</span>
+          </h2>
+          <input
+            type="date"
+            onChange={(event) => setTarget(new Date(event.target.value))}
+          />
         </div>
-      ) : null}
+        <div className={`timeContent ${target > 0 && "visible"}`}>
+          <div className="chileContent">
+            <div>Day</div>
+            <div className="num">{days}</div>
+          </div>
+          <div className="chileContent">
+            <div>Hour</div>
+            <div className="num">{hours}</div>
+          </div>
+          <div className="chileContent">
+            <div>Minute</div>
+            <div className="num">{minutes}</div>
+          </div>
+          <div className="chileContent">
+            <div>Second</div>
+            <div className="num">{seconds}</div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
