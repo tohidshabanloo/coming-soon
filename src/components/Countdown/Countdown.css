@@ -1,5 +1,5 @@
 .contet {
-  background-image: url("../../img/solid.jpg");
+  background-image: url("../../img/iran.jpg");
   background-position: center;
   background-size: cover;
   display: flex;
@@ -33,11 +33,12 @@
 }
 h2 {
   font-size: 45px;
+  color: white;
 }
 .timeContent {
   display: flex;
   flex-direction: row;
-  color: black;
+  color: white;
   font-size: 1.9rem;
   font-weight: 900;
   opacity: 0;
