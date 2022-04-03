@@ -1,74 +1,158 @@
-.contet {
-  background-image: url("../../img/iran.jpg");
-  background-position: center;
-  background-size: cover;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  height: 100vh;
-}
-.input {
-  font-size: 30px;
+/* DESKTOP */
+@media only screen and (min-width: 800px) {
+  .contet {
+    background-image: url("../../img/iran.jpg");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+  }
+  .input {
+    font-size: 30px;
+  }
+
+  .son {
+    width: 100px;
+    height: 100px;
+    color: goldenrod;
+    animation-name: asghar;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes asghar {
+    from {
+      color: #ffffff;
+      text-shadow: 0 0 5px rgb(0, 0, 0);
+    }
+    to {
+      color: #ff061b;
+      text-shadow: 0 0 5px rgba(0, 0, 0, 0.274);
+    }
+  }
+  h2 {
+    font-size: 45px;
+    color: white;
+  }
+  .timeContent {
+    display: flex;
+    flex-direction: row;
+    color: white;
+    font-size: 1.9rem;
+    font-weight: 900;
+    opacity: 0;
+    transition: 0.9s;
+  }
+  /* .visible:hover{
+    opacity: 1;
+  } */
+  .visible {
+    opacity: 1;
+  }
+  .hidden {
+    opacity: 0;
+  }
+  .timeContent div {
+    margin: 25px 15px;
+  }
+  .chileContent {
+    /* border: 1px solid white; */
+    width: 150px;
+    border-radius: 6%;
+    background-color: rgba(240, 248, 255, 0.233);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .num {
+    /* border: 1px solid red; */
+    width: 100px;
+    color: rgb(255, 255, 255);
+    /* height: 100px; */
+  }
 }
 
-.son {
-  width: 100px;
-  height: 100px;
-  color: goldenrod;
-  animation-name: asghar;
-  animation-duration: 4s;
-  animation-iteration-count: infinite;
-}
+/* MOBILE */
+@media only screen and (max-width: 800px) {
+  .contet {
+    background-image: url("../../img/iran.jpg");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+  }
+  .input {
+    font-size: 30px;
+  }
 
-@keyframes asghar {
-  from {
-    color: #ffffff;
-    text-shadow: 0 0 5px rgb(0, 0, 0);
+  .son {
+    width: 100px;
+    height: 100px;
+    color: goldenrod;
+    animation-name: asghar;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
   }
-  to {
-    color: #ff061b;
-    text-shadow: 0 0 5px rgba(0, 0, 0, 0.274);
+
+  @keyframes asghar {
+    from {
+      color: #ffffff;
+      text-shadow: 0 0 5px rgb(0, 0, 0);
+    }
+    to {
+      color: #ff061b;
+      text-shadow: 0 0 5px rgba(0, 0, 0, 0.274);
+    }
   }
-}
-h2 {
-  font-size: 45px;
-  color: white;
-}
-.timeContent {
-  display: flex;
-  flex-direction: row;
-  color: white;
-  font-size: 1.9rem;
-  font-weight: 900;
-  opacity: 0;
-  transition: 0.9s;
-}
-/* .visible:hover{
-  opacity: 1;
-} */
-.visible {
-  opacity: 1;
-}
-.hidden {
-  opacity: 0;
-}
-.timeContent div {
-  margin: 25px 15px;
-}
-.chileContent {
-  /* border: 1px solid white; */
-  width: 150px;
-  border-radius: 6%;
-  background-color: rgba(240, 248, 255, 0.233);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-.num {
-  /* border: 1px solid red; */
-  width: 100px;
-  color: rgb(255, 255, 255);
-  /* height: 100px; */
+  h2 {
+    font-size: 45px;
+    color: white;
+  }
+  .timeContent {
+    display: flex;
+    flex-direction: row;
+    color: white;
+    font-size: 1.9rem;
+    font-weight: 900;
+    opacity: 0;
+    transition: 0.9s;
+  }
+  /* .visible:hover{
+    opacity: 1;
+  } */
+  .visible {
+    opacity: 1;
+    font-size: 20px;
+    justify-content: center;
+  }
+  .hidden {
+    opacity: 0;
+  }
+  .timeContent div {
+    margin: 15px 2px;
+  }
+  .chileContent {
+    /* border: 1px solid white; */
+    width: 80px;
+    border-radius: 6%;
+    background-color: rgba(240, 248, 255, 0.233);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+  }
+  .num {
+    /* border: 1px solid red; */
+    width: 100px;
+    color: rgb(255, 255, 255);
+    /* height: 100px; */
+  }
 }
